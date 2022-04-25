@@ -1,0 +1,328 @@
+/* sec 1 */
+
+body{
+    background-color: black;
+    font-family: 'Open Sans';
+    color: white;
+    font-size: 16px;
+}
+
+h1,h2,h4{
+    font-family: 'Bebas Neue';
+}
+
+.navbar{
+    min-height: 80px;
+    font-size: 14px;
+    z-index: 100;
+    background-color: rgba(0,0,0,0.5);
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+}
+
+.navbar li{
+    margin-right: 20px;
+    font-weight: 700;
+}
+
+.navbar-brand{
+    letter-spacing: 3px;
+    padding-right: 20px;
+}
+
+.img-fluid{
+    background-image: url("assets/main-bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+.scroll{
+    position: absolute;
+    margin-right: -40px;
+    bottom: 30px;
+    right: 50%;
+   
+}
+
+.scroll a{
+    color: white;
+    text-decoration: none;
+}
+
+.scroll p{
+    margin: -5px;
+}
+
+.scroll .icon{
+    margin: 0 auto;
+    width: 50px;
+    height: 50px;
+    padding-top: 10px;
+    background-image: url("assets/scroll-down.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+/* sec 2 */
+
+section{
+    min-height: 100vh;
+    padding: 14vh 0;
+}
+
+.the-games{
+    background-image: url("assets/the-games-bg.jpg");
+    background-position: center;
+    height: 100vh;
+}
+
+.carousel-indicators button{
+    width: 8px !important;
+    height: 8px !important;
+    background-color: transparent !important;;
+    border: solid 3px #fff !important;
+    border-radius: 100px;
+    margin: 0px 25px !important;
+}
+
+.carousel-indicators .active{
+    background-color: white !important;
+}
+
+.carousel-control-prev{
+    left: -100px;
+    opacity: 1;
+}
+
+.carousel-control-prev-icon{
+    background: url("assets/scroll-down.svg");
+    background-repeat: no-repeat;
+    transform: rotate(90deg);
+
+}
+
+.carousel-control-next{
+    right: -100px;
+}
+
+.carousel-control-next-icon{
+    background: url("assets/scroll-down.svg");
+    background-repeat: no-repeat;
+    transform: rotate(-90deg);
+
+}
+
+/* sec 3 */
+
+.features{
+    background-image: url("assets/features.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+    margin-top: 0;
+    position: relative;
+}
+
+.features ul{
+    list-style: none;
+    padding: 20px;
+    margin-top: 3px;
+    position: relative;
+}
+
+h6{
+    font-size: 20px;
+    padding-top: 50px;
+}
+
+.h1{
+    letter-spacing: 3px;
+}
+
+.features li{
+    position: relative;
+    padding-left: 15px;
+    margin-top: 5px;
+    margin-bottom: 50px;
+}
+
+/* .position-relative .item{
+    margin-bottom: 20px;
+} */
+
+.features li.active::before{
+    content: "";
+    display: inline-block;
+    height: 155%;
+    width: 2px;
+    background: white;
+    position: absolute;
+    left: -15px;
+    top: 12px;
+}
+
+.features li h4::before{
+    content:"";
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    left: -21px;
+    top: 8px;
+    border-radius: 50%;
+    border: solid 2px #fff;
+}
+
+.features li.active h4::before{
+    background: #fff;
+}
+
+/* sec 4 */
+
+.requirements{
+    background-image: url('assets/requirements.png');
+    background-repeat: no-repeat;
+    background-position: center top;
+    position: relative;
+    background-size: cover;
+    /* -webkit-mask-image: linear-gradient(to left, rgb(29, 29, 29), transparent); */
+}
+
+.requirements .container{
+    z-index: 2;
+    position: relative !important;
+}
+
+.requirements h6{
+    text-align: center !important;
+    margin-bottom: 30px;
+}
+
+.requirements .grid-container{
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.requirements .grid-item{
+    padding: 10px;
+    border: solid 1px rgb(131, 131, 131, 0.5)
+}
+
+.requirements .grid-item.item5{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    position: relative;
+    border-bottom: none;
+    border-right: none;
+
+}
+
+.requirements .grid-item.item5 span{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    right: 0;
+    bottom:0;
+    left:0;
+    top:0;
+}
+
+.requirements .grid-item.item5 span svg {
+    overflow-x: hidden;
+    overflow-y: hidden;
+    width: 100%;
+    height: 100%;
+  }
+
+/* sec 5 */
+
+.top-scores{
+    background: url("assets/top-score-bg.png");
+    background-position: center top;
+    position: relative;
+    background-size: cover; 
+}
+
+.top-scores .container{
+    position: relative;
+    z-index: 2;
+}
+
+.top-scores .h1{
+    margin-top: 200px;
+}
+
+.top-scores .card{
+    border-radius: 12px;
+}
+
+.top-scores .profil-image,
+.top-scores .profil-image img,
+.top-scores .profil-image .back-shadow{
+    height: 70px; 
+    width: 70px; 
+    border-radius: 50%;
+}
+
+.top-scores .profil-image {
+    position: relative;
+    z-index: 10;
+}
+
+.top-scores .profil-image .back-shadow{
+    position: absolute;
+    top:4px;
+    left: 8px;
+    z-index:-1;
+}
+
+.btn-warning{
+    margin-top: 25px;
+    padding: 10px 60px 10px 60px;
+    font-weight: bold;
+}
+
+.top-scores .card-title span{
+    font-weight: 500;
+    position: relative;
+    top:-6px
+}
+
+.top-scores .twitter-icon {
+    width: 20px;
+    height: 20px;
+    background-image: url(assets/twitter.svg);
+    background-repeat: no-repeat;
+}
+
+.top-scores .grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.top-scores .grid-item.item1{
+    grid-row-start: 1;
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+.top-scores .grid-item.item2{
+    grid-row-start: 2;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.top-scores .grid-item.item3{
+    grid-row-start: 3;
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+/* Desktop */
+/* @media (min-width: 992px) and (max-width: 1199.98px) {
+
+} */
